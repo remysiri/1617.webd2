@@ -1,0 +1,572 @@
+/*----------------------------GENERAL BASIC CODE------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+a { text-decoration: none; }
+
+.slogan {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.slogan h2 { text-transform: uppercase; }
+
+.underline {
+    width: 150px;
+    margin: auto;
+    height: 2px;
+    background: #000;
+}
+
+.underline-short {
+  width: 60px;
+  margin: auto;
+  height: 2px;
+  background: #000;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*---------------------------PAGE LOADER-----------------------------*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+    height: 100%;
+	z-index: 9999;
+	background: url(../assets/icons/loading3.gif) center no-repeat #fff;
+  background-size: 100px;
+}
+
+
+/*------------------------------ANIMATED BACKGROUND----------------------*/
+
+
+.container-wrapper {
+    position: relative;
+    height: 100vh;
+}
+.intro-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    z-index: -100;
+}
+
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+.videolayer1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(../assets/images/vid_pattern_dark1.png);
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9998;
+}
+
+/*------------------------------NAVIGATION BAR----------------------*/
+
+.nav-bar {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-header {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.nav-bar .nav-header a {
+    text-decoration: none;
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.left-menu-item { float: left; margin: 50px 0px; }
+
+.right-menu-item { float: right; margin: 50px 0px; }
+
+.nav-bar.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*------------------------------SIDE SOCIAL BAR----------------------*/
+
+.social-sidebar {
+  width: 30px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.social-sidebar img {
+  width: 20px;
+  margin: 10px 0px;
+}
+
+/*------------------------------FIRST SECTION CONTENT----------------------*/
+.head-intro {
+    position: relative;
+    top: calc(50% - 100px);
+    text-align: center;
+}
+
+.head-intro-img {
+  width: 150px;
+}
+
+.intro-bttn {
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: calc(80% - 50px);
+    z-index: 9999;
+}
+
+.intro-bttn img {
+  width: 50px;
+}
+
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*------------------------------SECOND SECTION CONTENT----------------------*/
+
+.workflow-container {
+    background: #F5F5F5;
+    padding-bottom: 80px;
+}
+
+.workflow-content-container {
+    max-width: 1250px;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding-top: 60px;
+}
+
+.workflow-left {
+    text-align: right;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 4%;
+    width: 48%;
+}
+
+.workflow-right {
+    text-align: left;
+    float: left;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.workflow-item {
+    margin: 30px 0px;
+}
+
+.workflow-left .workflow-logo-container {
+    float: right;
+}
+
+.workflow-right .workflow-logo-container {
+    float: left;
+}
+
+.workflow-left .workflow-logo-container {
+    width: 30px;
+    margin: 15px 0px 15px 20px;
+}
+
+.workflow-right .workflow-logo-container {
+    width: 30px;
+    margin: 15px 20px 15px 0px;
+}
+
+.workflow-logo {
+    width: 30px;
+}
+
+.workflow-item h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 6px;
+}
+
+.workflow-item p {
+    color: #999999;
+}
+
+/*------------------------------THIRD SECTION CONTENT----------------------*/
+
+
+.content-about {
+    background: #fff;
+}
+
+.slogan {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.slogan h2 { text-transform: uppercase; font-size: 22px; font-weight: 900;}
+
+.content-about .about-wrap {
+    width: 960px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.content-about .about-wrap .about-content {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.content-about .about-wrap .about-content p {
+  color: #999999;
+}
+
+
+/*------------------------------FOURTH SECTION CONTENT----------------------*/
+
+.team-container {
+  background: transparent;
+}
+
+.team-container .slogan h2 { color: #fff; }
+.team-container .underline-short { background: #fff; }
+
+.team-container .team-wrap {
+  max-width: 560px;
+  margin: auto;
+  display: block;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.team-container .team-wrap .team-member-container {
+  margin: 1.44%;
+  max-width: 30.333%;
+  float: left;
+}
+
+.team-container .team-wrap .team-member-container .team-member-img { text-align: center; }
+.team-container .team-wrap .team-member-container .team-member-img img { width: 150px; box-shadow: 0px 0px 5px #000; }
+
+.team-container .team-wrap .team-member-container h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 6px;
+  color: white;
+  text-align: center;
+}
+
+.team-container .team-wrap .team-member-container p {
+  color: #999999;
+  text-align: center;
+}
+
+/*------------------------------INTO PORTFOLIO PAGE----------------------*/
+
+.intro-portfolio-container {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    margin-top: 200px;
+    height: 500px;
+}
+
+.portfolio-intro {
+    position: relative;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.portfolio-intro-img {
+  width: 150px;
+}
+
+.portfolio-button {
+  margin: auto;
+  background: transparent;
+  border: 1px solid #A5A5A5;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #999999;
+  padding: 10px 15px;
+  display: block;
+  width: 62px;
+}
+
+.portfolio-button:hover {
+  cursor: pointer;
+  background: #A5A5A5;
+  color: #F5F5F5;
+}
+/*------------------------------GREY PORTFOLIO PAGE----------------------*/
+
+.portfolio-container {
+    background: #F5F5F5;
+    padding-bottom: 80px;
+    width: 50%;
+    float :left;
+}
+
+.portfolio-content-container {
+    max-width: 1250px;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding-top: 40px;
+}
+
+.portfolio-content-container .portfolio-wrap {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.portfolio-content-container .portfolio-wrap .portfolio-content {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.portfolio-content-container .portfolio-wrap .portfolio-content p {
+  color: #999999;
+}
+
+.portfolio-content-container .portfolio-wrap .portfolio-content .thumbail-portfolio {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+
+
+/*------------------------------WHITE PORTFOLIO PAGE----------------------*/
+
+.portfolio-container2 {
+    background: #fff;
+    padding-bottom: 80px;
+    width: 50%;
+    float: left;
+}
+
+
+/*------------------------------DETAIL PORTFOLIO ITEM----------------------*/
+
+.detail-container {
+    background: #F5F5F5;
+    padding-bottom: 80px;
+}
+
+.detail-content-container {
+    max-width: 1250px;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding-top: 40px;
+}
+
+.detail-content-container .detail-wrap {
+    width: 960px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.detail-content-container .detail-wrap .detail-content {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.detail-content-container .detail-wrap .detail-content p {
+  color: #999999;
+}
+
+.detail-content-container .detail-wrap .detail-content ul {
+  margin-bottom: 40px;
+}
+
+.detail-content-container .detail-wrap .detail-content ul li {
+  display: inline-block;
+  color: #1C1C1C;
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 0px 40px;
+}
+
+.detail-content-container .detail-wrap .detail-content .thumbail-preview {
+  height: 478px;
+  width: 280px;
+  margin: auto;
+  padding-top: 60px;
+}
+/*------------------------------END PORTFOLIO----------------------*/
+
+/*------------------------------CONTACT PAGE----------------------*/
+
+.contact-container {
+    background: #F5F5F5;
+    padding-bottom: 80px;
+}
+
+.contact-content-container {
+    max-width: 1250px;
+    margin: auto;
+    display: block;
+    position: relative;
+    padding-top: 40px;
+}
+
+.contact-content-container .contact-wrap {
+    width: 960px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.contact-content-container .contact-wrap .contact-content {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.contact-content-container .contact-wrap .contact-content p {
+  color: #999999;
+}
+
+.contact-content-container .contact-wrap .contact-content .thumbail-portfolio {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-form-container {
+  width: 620px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-name {
+  float: left;
+  margin: 10px;
+}
+
+.contact-form-container .contact {
+  padding: 20px;
+  border: 2px solid #BBBBBF;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.contact-form-container .contact:hover {
+  border: 2px solid #333F4C;
+}
+
+.container-email {
+  float: left;
+  margin: 10px;
+}
+
+.container-phone {
+  float: left;
+  margin: 10px;
+}
+
+.container-message {
+  margin: 10px;
+}
+
+.container-message .contact-message {
+  padding: 20px;
+  border: 2px solid #BBBBBF;
+  background-color: transparent;
+  width: 555px;
+  transition: all 0.3s ease;
+}
+
+.container-message .contact-message:hover {
+  border: 2px solid #333F4C;
+}
+
+.contact-form-container .submit-container {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  display: block;
+  padding-top: 20px;
+}
+
+.contact-form-container .submit-contact {
+  width: 40px;
+  height: 40px;
+  background: url("../assets/icons/check93.svg");
+  transition: all 0.3s ease;
+}
+
+.contact-container .submit-contact:hover {
+  background: url("../assets/icons/check93_hover.svg");
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
