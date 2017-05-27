@@ -101,7 +101,7 @@ a { text-decoration: none; }
 }
 
 .nav-header {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -117,13 +117,6 @@ a { text-decoration: none; }
 .left-menu-item { float: left; margin: 50px 0px; }
 
 .right-menu-item { float: right; margin: 50px 0px; }
-
-.nav-bar.is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 
 /*------------------------------SIDE SOCIAL BAR----------------------*/
 
@@ -265,7 +258,7 @@ a { text-decoration: none; }
 .slogan h2 { text-transform: uppercase; font-size: 22px; font-weight: 900;}
 
 .content-about .about-wrap {
-    width: 960px;
+    max-width: 960px;
     margin: auto;
     padding-top: 80px;
 }
@@ -477,7 +470,7 @@ a { text-decoration: none; }
 }
 
 .contact-content-container .contact-wrap {
-    width: 960px;
+    max-width: 960px;
     padding-top: 20px;
     margin: auto;
 }
@@ -499,7 +492,7 @@ a { text-decoration: none; }
 }
 
 .contact-form-container {
-  width: 620px;
+  max-width: 620px;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -569,4 +562,113 @@ a { text-decoration: none; }
 #map {
   height: 500px;
   width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+/*--------------------INDEX PAGE---------------------------*/
+
+
+/*--------------------NAV---------------------------*/
+
+  .left-menu-item { float: left; margin: 50px 40px; }
+  .right-menu-item { float: right; margin: 50px 40px; }
+
+/*--------------------END NAV---------------------------*/
+
+/*--------------------WORKFLOW---------------------------*/
+
+  .workflow-left {
+      text-align: right;
+      clear: both;
+      margin-bottom: 20px;
+      margin-right: 4%;
+      width: 90%;
+  }
+
+  .workflow-right {
+      text-align: left;
+      clear: both;
+      margin-bottom: 20px;
+      margin-left: 4%;
+      width: 90%;
+  }
+
+/*--------------------END WORKFLOW---------------------------*/
+
+/*-------------------- ABOUT---------------------------*/
+
+  .content-about .about-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+/*--------------------END ABOUT---------------------------*/
+
+
+
+/*--------------------END INDEX PAGE---------------------------*/
+
+
+
+
+
+
+
+/*--------------------PORTFOLIO PAGE---------------------------*/
+
+  .portfolio-container {
+      width: 100%;
+      clear: both;
+  }
+
+
+  .portfolio-container2 {
+      width: 100%;
+      clear: both;
+  }
+
+
+/*--------------------END PORTFOLIO PAGE---------------------------*/
+
+.contact-form-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+    
+
+  .container-name {
+    clear: both;
+    margin: 10px;
+  }
+
+  .container-email {
+    clear: both;
+    margin: 10px;
+  }
+
+  .container-phone {
+    clear: both;
+    margin: 10px;
+  }
+
+  .container-message {
+    margin: 10px;
+  }
+
+  .container-message .contact-message {
+    padding: 20px;
+    border: 2px solid #BBBBBF;
+    background-color: transparent;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .container-message .contact-message:hover {
+    border: 2px solid #333F4C;
+  }
+
+
 }
